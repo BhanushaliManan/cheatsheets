@@ -25,7 +25,9 @@
             <pre class="language-bash"><code>pip install opencv-python</code></pre>
         </li>
         
-        <li><b>OpenCV Basic Boilerplate Boilerplate</b>
+        <br/>
+        
+        <li><b>Basic Boilerplate</b>
             <pre class="language-python"><code>import cv2
 
 # Different Modes For Images
@@ -42,6 +44,8 @@ cv2.destroyAllWindows()
 </code></pre>
         </li>
         
+        <br/>
+        
         <li><b>Resizing An Image</b>
             <pre class="language-python"><code>import cv2
 img = cv2.imread("assets/img.png", 1)
@@ -56,6 +60,8 @@ cv2.destroyAllWindows()
 </code></pre>
         </li>
         
+        <br/>
+        
         <li><b>Resizing An Image By Relative Values</b>
             <pre class="language-python"><code>import cv2
 img = cv2.imread("assets/img.png", 1)
@@ -68,6 +74,23 @@ cv2.destroyAllWindows()
 
 </code></pre>
         </li>
+        
+        <br/>
+        
+        <li><b>Rotating An Image</b>
+            <pre class="language-python"><code>import cv2
+img = cv2.imread("assets/img.png", 1)
+
+img = cv2.rotate(img, cv2.cv2.ROTATE_90_COUNTERCLOCKWISE) # This Will Rotate The Image Anti-Clockwise By 90 Degree.
+
+cv2.imshow("Image", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+</code></pre>
+        </li>
+        
+        <br/>
         
     </ol>
 </div>
