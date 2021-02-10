@@ -27,7 +27,15 @@
         
         <li><b>OpenCV Basic Boilerplate Boilerplate</b>
             <pre class="language-python"><code>import cv2
-img = cv2.imread('assets/img.png', )
+
+# Different Modes For Images
+
+# -1 = cv2.IMREAD_COLOR = Loads A Color Image, Any Transparency of Image will Be Neglected
+# 0 = cv2.IMREAD_GRAYSCALE = Loads Image in Grayscale Mode
+# 1 = cv2.IMREAD_UNCHANGED = Loads Image as it is incuding Alpha Channels
+
+mode = 1
+img = cv2.imread('assets/img.png', mode) # Default Mode is -1
 cv2.imshow('Image', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
