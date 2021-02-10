@@ -41,6 +41,34 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 </code></pre>
         </li>
+        
+        <li><b>Resizing An Image</b>
+            <pre class="language-python"><code>import cv2
+img = cv2.imread("assets/img.png", 1)
+
+dimensions = (400, 400) # 400 x 400
+img = cv2.resize(img, dimensions)
+
+cv2.imshow("Image", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+</code></pre>
+        </li>
+        
+        <li><b>Resizing An Image By Relative Values</b>
+            <pre class="language-python"><code>import cv2
+img = cv2.imread("assets/img.png", 1)
+
+img = cv2.resize(img, (0, 0), fx=0.5, fy=0.5) # This will Multiply The Image's 'X' Value to 0.5 and 'Y' Value to 0.5, Thus Making it Half The Size Of Whatever It was.
+
+cv2.imshow("Image", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+</code></pre>
+        </li>
+        
     </ol>
 </div>
 </body>
