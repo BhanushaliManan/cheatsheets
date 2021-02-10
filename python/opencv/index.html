@@ -92,6 +92,22 @@ cv2.destroyAllWindows()
         
         <br/>
         
+        <li><b>Saving An Image</b>
+            <pre class="language-python"><code>import cv2
+img = cv2.imread("assets/img.png", 1)
+
+# Do Stuff With The Image
+
+new_file_name = "assets/new_img.png" # File In Which you want to Save The Processed Image
+cv2.imwrite(new_file_name, img) # This Will Save The Processed Image in 'assets' Folder with the File Name 'new_img.png'
+
+cv2.imshow("Image", img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+</code></pre>
+        </li>
+        
     </ol>
 </div>
 </body>
