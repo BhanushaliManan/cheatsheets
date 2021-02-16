@@ -46,7 +46,7 @@
         <br/>
         
         <li><b>Boilerplate</b>
-            <pre class="language-python"><code>from flask import Flask
+            <pre class="language-python"><code>from flask import Flask, render_template
 from dotenv import load_dotenv
 from pathlib import Path
 import os
@@ -91,10 +91,23 @@ FLASK_ENV=development
         <li><b>Running A Flask Project (Enter This in a Terminal)</b>
             <pre class="language-bash"><code>flask run
 </code></pre>
-            Now Go to "127.0.0:5000" in your Browser
+            Now Go to "127.0.0.1:5000" in your Browser
         </li>
         
         <br/>
+        
+        <li><b>Creating The Index Route</b>
+            <br/>
+            <br/>
+            Add This At The Bottom Of your "app.py" File
+            <pre class="language-python"><code>@app.route(/)
+def index():
+    return "<h1>Hello World!!!</h1>"
+    
+# Instead Of The "H1" Tag, You Can Write Any HTML Code
+# Run This And Go to "127.0.0.1:5000" in a Browser And You can will see the Output of whatever HTML you wrote
+</code></pre>
+        </li>
            
     </ol>
 </div>
