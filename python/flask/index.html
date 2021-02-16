@@ -26,6 +26,11 @@
 </code></pre>
         </li>
         
+        <li><b>Installation of "dotenv" Package</b>This Package will be Used for Loading Environment Variables
+            <pre class="language-bash"><code>pip install python-dotenv
+</code></pre>
+        </li>
+        
         <br/>
 
         <li><b>Basic Directory Structure</b>
@@ -33,6 +38,29 @@
 └── app.py
 └── templates/
 └── .env
+</code></pre>
+        </li>
+        <li><b>Boilerplate</b>
+            <pre class="language-python"><code>from flask import Flask
+from dotenv import load_dotenv
+from pathlib import Path
+import os
+
+# Loading Environment Variables
+env_path = Path('.') / '.env'
+load_dotenv(env_path)
+
+app = Flask(__name__)
+
+# Define a "SECRET_KEY" Variable in your ".env" File
+# So your ".env" FIle Should Be Like:
+
+"""
+SECRET_KEY=my_super_secret_key
+"""
+
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY") 
+
 </code></pre>
         </li>
     </ol>
