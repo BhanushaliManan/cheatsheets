@@ -103,7 +103,7 @@ FLASK_ENV=development
             Add This At The Bottom Of your "app.py" File
             <pre class="language-python"><code>@app.route(/)
 def index():
-    return "<h1>Hello World!!!</h1>"
+    return "&lt;h1&gt;Hello World!!!&lt;/h1&gt;"
     
 # Instead Of The "H1" Tag, You Can Write Any HTML Code
 # Run This And Go to "127.0.0.1:5000" in a Browser And You can will see the Output of whatever HTML you wrote
@@ -113,9 +113,9 @@ def index():
         <br/>
         
         <li><b>Creating Other Routes</b>
-            <pre class="language-bash"><code>@app.route("whatever_you_can_think_of")
-def whatever_you_can_think_of():
-    return "<h1>Whatever You Can Think Of!!!!!</h1>"
+            <pre class="language-bash"><code>@app.route("whatever")
+def whatever():
+    return "&lt;h1&gt;Whatever You Can Think Of!!!!!&lt;/h1&gt;"
     
 # Run This and Go to "127.0.0.1:5000/whatever_you_can_think_of/" to see The Output
 </code></pre>
