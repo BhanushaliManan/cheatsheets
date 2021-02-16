@@ -78,6 +78,7 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
             <pre class="language-python"><code>FLASK_APP=app.py
 FLASK_ENV=development
 </code></pre>
+            <br/>
             Now Your ".env" File Should Look Like This
             <pre class="language-python"><code>SECRET_KEY=my_super_secret_key
 FLASK_APP=app.py
@@ -108,7 +109,17 @@ def index():
 # Run This And Go to "127.0.0.1:5000" in a Browser And You can will see the Output of whatever HTML you wrote
 </code></pre>
         </li>
-           
+        
+        <br/>
+        
+        <li><b>Creating Other Routes</b>
+            <pre class="language-bash"><code>@app.route("whatever_you_can_think_of")
+def whatever_you_can_think_of():
+    return "<h1>Whatever You Can Think Of!!!!!</h1>"
+    
+# Run This and Go to "127.0.0.1:5000/whatever_you_can_think_of/" to see The Output
+</code></pre>
+                  
     </ol>
 </div>
 </body>
