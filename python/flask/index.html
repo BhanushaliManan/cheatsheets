@@ -71,6 +71,29 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
         
         <br/>
         
+        <li><b>Setting Up Environment Variables For A Flask Project</b>
+            Add This Code To your ".env" File
+            <pre class="language-python"><code>FLASK_APP=app.py
+FLASK_ENV=development
+</code></pre>
+            Now Your ".env" File Should Look Like This
+            <pre class="language-python"><code>SECRET_KEY=my_super_secret_key
+FLASK_APP=app.py
+FLASK_ENV=development
+</code></pre>
+            
+        </li>
+        
+        <br/>
+        
+        <li><b>Running A Flask Project (Enter This in a Terminal)</b>
+            <pre class="language-bash"><code>flask run
+</code></pre>
+            Now Go to "127.0.0:5000" in your Browser
+        </li>
+        
+        <br/>
+           
     </ol>
 </div>
 </body>
