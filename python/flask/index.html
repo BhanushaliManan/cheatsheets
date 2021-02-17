@@ -143,6 +143,27 @@ def my_route():
 <br/>
 Go To "127.0.0.1:5000/my_route" To View The Result Of The HTML File you specified.                    
         </li>
+        
+        <br/>
+        
+        <li><b>Creating Custom Error Pages</b>
+            <pre class="language-python"><code>error_number = 404
+@app.errorhandler(error_number)
+def page_not_found_error(error):
+    return render_template("error404.html"), error_number
+</code></pre>
+Now Go to "127.0.0.1:5000/anypage_that_does_not_exist" in your Browser And You Will See The Result of "error404.html"
+            <br/>
+ Instead of 404 Error, You Can Specify Any Error Number, and Instead of "page_not_found_error" as the Function Name, any Function Name can Be Given
+            <br/>
+Example:
+<pre class="language-python"><code>@app.errorhandler(500)
+def internal_server_error(error):
+    return render_template("error500.html"), 500
+</code></pre>
+        </li>
+        
+        <br/>
                   
     </ol>
 </div>
