@@ -113,7 +113,7 @@ def index():
         <br/>
         
         <li><b>Creating Other Routes</b>
-            <pre class="language-bash"><code>@app.route("/whatever")
+            <pre class="language-bash"><code>@app.route("/")
 def whatever():
     return "&lt;h1&gt;Whatever You Can Think Of!!!!!&lt;/h1&gt;"
     
@@ -133,6 +133,7 @@ def rendering_files():
 </code></pre>
 <br/>
 Replace "rendering_files" in the Code with any Other Route.
+<br/>
 Example:
 <pre class="language-python"><code>@app.route("/my_route")
 def my_route():
