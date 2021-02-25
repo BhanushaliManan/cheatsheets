@@ -172,7 +172,7 @@ def internal_server_error(error):
             <li>Using Variables From Python File
                 
                 
-        <br/>First Create A Variable In Your Python File, And then give it as a argument to the "render_template" Function<br/>  
+        <br/><br/>First Create A Variable In Your Python File, And then give it as a argument to the "render_template" Function<br/><br/>  
                 
                 <pre class="language-python"><code>@app.route("/using_variables")
 def using_variables():
@@ -180,7 +180,7 @@ def using_variables():
     return render_template("variable.html", my_variable = my_variable)
 </code></pre>
                 
-        <br/>Now you can Use it Anywhere in your HTML File as Follows,<br/>
+        <br/>Now you can Use it Anywhere in your HTML File as Follows,<br/><br/>
                 
                                 <pre class="language-html"><code>{{ my_variable }}
 </code></pre>
