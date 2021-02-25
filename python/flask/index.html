@@ -122,7 +122,20 @@ def anything():
             </li>
             
             <br/>
+        
+        <li><b>Getting Values From URLs</b>
+            <pre class="language-python"><code>@app.route("/user/<name>")
+def user(name):
+    return f"<h1>Hello {name}!!!!<h1>"
+    
+</code></pre>
+    
+    <br/>Run This and Go to "127.0.0.1:5000/user/John", which will return "Hello John"<br/>Instead Of "John" you can Enter any Name and see the Hello <name> Message!!!
+
+            </li>
             
+            <br/>
+                   
 <li><b>Rendering Files Instead of strings</b>
 <br/>
 <br/>
@@ -190,7 +203,9 @@ def using_variables():
                 <br/><br/Note: You Can Use Multiple Variables This way, By repeating the steps above, and Replacing "my_variable" with a different Variable Name<br/><br/>
                 
             </li>
-                  
+        
+      <br/>
+        
     </ol>
 </div>
 </body>
