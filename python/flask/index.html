@@ -167,18 +167,20 @@ def internal_server_error(error):
         
         <br/>
         
-        <b>Using Flask's Jinja2 Templating Language</b>
-        
-        <br/><br/>First Create A Variable In Your Python File, And then give it as a argument to the "render_template" Function<br/><br/>
-        
+        <strong>Using Flask's Jinja2 Templating Language</strong>
+              
             <li>Using Variables From Python File
+                
+                
+        <br/>First Create A Variable In Your Python File, And then give it as a argument to the "render_template" Function<br/>  
+                
                 <pre class="language-python"><code>@app.route("/using_variables")
 def using_variables():
     my_variable = "variable"
     return render_template("variable.html", my_variable = my_variable)
 </code></pre>
                 
-        <br/><br/>Now you can Use it Anywhere in your HTML File as Follows,<br/><br/>
+        <br/>Now you can Use it Anywhere in your HTML File as Follows,<br/>
                 
                                 <pre class="language-html"><code>{{ my_variable }}
 </code></pre>
