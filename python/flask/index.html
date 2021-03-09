@@ -211,7 +211,7 @@ def using_variables():
         <br/><br/>First Create A Loopable Item(Eg. List,Dictionary or a Tuple) to use in the For Loop, and give it as an argument to the render_template Function<br/><br/>  
                 
                 <pre class="language-python"><code>@app.route("/using_for_loops")
-def using_variables():
+def using_for_loops():
     my_list = ["Item 1", "Item 2", "Item 3"]
     return render_template("using_for_loops.html", my_list=my_list)
 </code></pre>
@@ -219,12 +219,13 @@ def using_variables():
         <br/>Now in your HTML File, you can Loop throught the list like This:<br/><br/>
                 
                                 <pre class="language-html"><code>{% for every_object in my_list %}
-<h1>{{ every_object }}</h1>
+&lt;h1&gt;{{ every_object }}&lt;/h1&gt;
 {% endfor %}
 </code></pre>
                 
-                <br/><br/>Remember: To Use Variables in Jinja Language, '{{ <variable_name> }}' is Used(Replacing <variable_name> with the Actual Variable)<br/><br/>
-                <br/>To Use Logical Statements(Loops, if-else statement etc), {% <code-block> %}{% <end-code-block> %} is Used.
+                <br/><br/>Remember: To Use Variables in Jinja Language, 
+                <pre class="language-html"><code>{{ &lt;variable_name&gt; }}<code></pre> is Used(Replacing &lt;variable_name&gt; with the Actual Variable)<br/><br/>
+                <br/>To Use Logical Statements(Loops, if-else statement etc), {% &lt;code-block&gt; %}{% &lt;end-code-block&gt; %} is Used.
                 <br/>Eg, to Use For Loops, The Structure would be: {% for ........ %}{% endfor %}
                 <br/>And to Use If-Else Loops, The Structure would be: {% if ........ %}{% else %}{% endif %}
                 
