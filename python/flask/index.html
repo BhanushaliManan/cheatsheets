@@ -224,11 +224,22 @@ def using_for_loops():
 </code></pre>
                 
                 <br/><br/>Remember: To Use Variables in Jinja Language, 
-                <pre class="language-html"><code>{{ &lt;variable_name&gt; }}<code></pre> is Used(Replacing &lt;variable_name&gt; with the Actual Variable)<br/><br/>
-                <br/>To Use Logical Statements(Loops, if-else statement etc), {% &lt;code-block&gt; %}{% &lt;end-code-block&gt; %} is Used.
-                <br/>Eg, to Use For Loops, The Structure would be: {% for ........ %}{% endfor %}
-                <br/>And to Use If-Else Loops, The Structure would be: {% if ........ %}{% else %}{% endif %}
+                <pre class="language-html"><code>{{ &lt;variable_name&gt; }}</code></pre> is Used (Replacing &lt;variable_name&gt; with the Actual Variable)<br/><br/>
+                <br/>To Use Logical Statements(Loops, if-else statement etc),
+                <pre class="language-html"><code>{% &lt;code-block&gt; %}
+{% &lt;end-code-block&gt; %}</code></pre>  is Used.
                 
+                <br/>
+
+                <br/>Eg, to Use For Loops, The Structure would be: 
+                <pre class="language-html"><code>{% for ........ %}
+{% endfor %}</code></pre>
+                <br/>
+                And to Use If-Else Loops, The Structure would be:
+                <pre class="language-html"><code>{% if ........ %}
+{% else %}
+{% endif %}
+</code></pre>
             </li>
         
       <br/>
